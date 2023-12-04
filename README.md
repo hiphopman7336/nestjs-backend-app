@@ -30,6 +30,9 @@
 
 ```bash
 $ npm install
+
+nest generate module product
+nest generate controller product
 ```
 
 ## Running the app
