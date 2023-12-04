@@ -30,7 +30,7 @@
 
 ```bash
 $ npm install
-
+// CMD your Taskbar root
 nest generate module product
 nest generate controller product
 nest generate service product

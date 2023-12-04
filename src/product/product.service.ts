@@ -16,4 +16,8 @@ export class ProductService {
     findById(id: number){
         return this.products.find((p) => p.id === id);
     }
+
+    findByCondition(predicate : (product: ProductDTO)=> boolean){
+        return this.products.filter(p=>predicate(p))
+    }
 }
