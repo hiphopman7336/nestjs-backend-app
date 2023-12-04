@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { ProductDTO } from 'src/dto/product.dto';
 import { ProductService } from './product.service';
 
@@ -11,5 +11,11 @@ export class ProductController {
     @Get()
     getProductAll(): ProductDTO[] {
         return this.productService.findAll();
+    }
+
+    @Get(':id')
+    getProductById(@Param('id') id: string) {
+        return this.productService.findById(Number(id));
+       
     }
 }
