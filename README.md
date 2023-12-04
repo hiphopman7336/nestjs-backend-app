@@ -32,6 +32,8 @@
 $ npm install
 // CMD your Taskbar root
 npm install -g @nestjs/cli
+ng new nestjs-backend-app
+cd nestjs-backend-app/src
 nest generate module product
 nest generate controller product
 nest generate service product
