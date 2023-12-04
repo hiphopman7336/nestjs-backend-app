@@ -31,6 +31,7 @@
 ```bash
 $ npm install
 // CMD your Taskbar root
+npm install -g @nestjs/cli
 nest generate module product
 nest generate controller product
 nest generate service product
