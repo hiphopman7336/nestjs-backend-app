@@ -33,6 +33,8 @@ $ npm install
 
 nest generate module product
 nest generate controller product
+nest generate service product
+npm run start:dev
 ```
 
 ## Running the app
